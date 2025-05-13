@@ -7,18 +7,17 @@ This project implements a deep learning-based model for Vietnamese sentence-leve
 ## Overview
 
 The pipeline consist of 2 parts:
-TASK 1: Error Detection
-Train a Token Classification model to identify and label spelling errors in sentences.
+- TASK 1: Error Detection
+  - Train a Token Classification model to identify and label spelling errors in sentences.
 
-TASK 2: Spelling Correction
-Train Transformer-based model for MLM task to extract semantic meaning.
-Take top 10 predictions and select the best match for the misspelled word.
+- TASK 2: Spelling Correction
+  - Train Transformer-based model for MLM task to extract semantic meaning. Take top 10 predictions and select the best match for the misspelled word.
 
 ---
 
 ## Dataset
 
-Paragraphs with random errors (remove spaces, change punctuation, lowercase, uppercase, insert symbols, etc.).
+- Paragraphs with random errors (remove spaces, change punctuation, lowercase, uppercase, insert symbols, etc.).
 
 ---
 

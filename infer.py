@@ -10,7 +10,8 @@ import pandas as pd
 # ================== Config ==================
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 checkpoint_path = "checkpoint/detection"
-model_name_mlm = "xlm-roberta-base"
+model_name_mlm = "checkpoint/correction"
+#model_name_mlm = "xlm-roberta-base"
 
 
 @st.cache_resource

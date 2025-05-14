@@ -145,7 +145,7 @@ if st.button("Sửa Lỗi"):
         tokens = user_input.split()
         error_flags = detect_error(model_detect, tokenizer_detect, tokens)
         corrected_sentence = correct_error_encoder_top_k(
-            model_correct, tokenizer_correct, tokens, error_flags
+            model_correct, tokenizer_correct, tokens, error_flags, top_k=20
         )
         st.success("Kết quả:")
         st.write("**Câu gốc:** ", user_input)
